@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.LoginBox{
+			width: 500px;
+			height:600px;
+			background-color: rgba(0,0,0,0.75);
+			color: #fff;
+			top: 50%;
+			left:50%;
+			position: absolute;
+			transform: translate(-50%,-50%);
+			box-sizing: border-box;
+			padding: 100px 0px;
+			box-shadow: 6px 6px 29px -4px rgba(0,0,0,0.75);
+		}
+
+		
+		
+
+input[type=text], input[type=password] {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+
+}
+
+ button {
+  background-color: #666666;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 50px ;
+  cursor: pointer;
+  width: 40%;
+  font-family: Impact, Charcoal, sans-serif;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+body {
+  background-image: url("2.jpg");
+  background-repeat: no-repeat;
+  height: 100%;
+  background-size: cover;
+
+}
+h2{
+	font-family: Impact, Charcoal, sans-serif;
+}
+p{
+	font-family: Impact, Charcoal, sans-serif;
+}
+span{
+	font-family: Impact, Charcoal, sans-serif;
+}
+
+	</style>
+
+
+</head>
+<body>
+
+ <script type="text/javascript">
+ 	function validate() {
+ 		var a= document.LoginForm.EmailId.value;
+ 		var b=document.LoginForm.password.value;
+ 		if((a.length)=='0')
+ 		{
+          document.getElementById('message').innerHTML="Please Enter Email Id";
+ 		}
+ 		if(a.indexOf('@')<=0){
+ 			document.getElementById('message').innerHTML="Invalid Email Id";
+ 			return false;
+ 		}
+ 		if((a.charAt(a.length-4)!='.') && (a.charAt(a.length-3)!='.')){
+ 			document.getElementById('message').innerHTML="Invalid Email Id";
+ 			return false;
+ 		}
+ 	
+			
+ 		else{
+ 			alert("Login Success");
+ 			window.location="myhome.html";
+ 			return false;
+ 		}
+ 		
+ 		
+ 	}
+ </script>
+
+
+	<form name="LoginForm" onsubmit="return validate()">
+	
+
+	<div class="LoginBox">
+	<center>
+
+		<span><h2>LOGIN</h2></span> 
+
+
+		<p>Email:</p>
+	<input type="text" placeholder="Enter Email Id" name="EmailId" value="" required="required">
+</br>
+
+	<span id="message" ></span>
+</br>
+
+
+<p>Password:</p><input type="password" placeholder="Enter Password" name="password" value="" required="required" >
+</br>
+</br>
+
+
+<button type="Submit">Submit</button>
+</br>
+</br>
+
+
+<a href="mysignup.html" id="Account">Don't have an account? Get One</a>
+<style text="text/css">
+	#Account{
+		color: gray;
+
+	}
+	#Account:hover{
+		color: yellow;
+	}
+	</div>
+
+</style>
+</center>
+	
+</form>
+</body>
+</html>

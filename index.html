@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="homestyle.css">
+
+<style>
+
+
+
+
+</style>
+</head>
+<body>
+
+
+	<script>
+		
+
+	function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height= "0%";
+}
+
+var images = ["1.jpg",
+"3.jpg",
+"4.jpg",
+"5.jpg"];
+var i=0;
+
+function changeimage(){
+	document.getElementById('slideimage').src=images[i];
+	if(i<(images.length-1)){
+		i++;
+	}
+	else{
+		i=0;
+	}
+
+}
+
+setInterval(changeimage,2000)
+	
+</script>
+
+
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="newsletter.html">NewsLetter</a>
+    <a href="salepage.html">SALE!!</a>
+    <a href="#">Store</a>
+    <a href="profile.html">Profile</a>
+    <a href="mylogin.html">Logout</a>
+  </div>
+</div>
+
+
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+<center>
+
+<h1>
+	Home Page
+</h1>
+
+<div class="slideshow" >
+<hr>
+<h2>NEW RELEASES ON TGP</h2>
+<image src="1.jpg" id="slideimage">
+
+	</div>
+
+
+<div class="expandimage">
+
+	<h2><center>GAMES ADDED IN THE PAST WEEK</center></h2>
+	<hr>
+</div>
+
+</br>
+
+<div class="container">
+	
+
+  <img src="6.jpg" alt="Avatar" class="image" >
+  <div class="overlayexpand">
+    <div class="text"> Team Fortress 2</br> Online Multiplayer </br> Strategy </br> 78% Positive Responses</div>
+  </div>
+</div>
+</br>
+<div class="container">
+  <img src="7.jpg" alt="Avatar" class="image">
+  <div class="overlayexpand">
+    <div class="text">ARMA 3</br> Online Multiplayer </br> Shooting </br> 75% Positive Responses</div>
+  </div>
+</div>
+</br>
+</br>
+<div class="container">
+  <img src="8.jpg" alt="Avatar" class="image">
+  <div class="overlayexpand">
+    <div class="text">Euro Truck Simulator 2 </br> Offile/Online Multiplayer </br>Trucking  </br>World Wide Maps  </br>  89% Positive Responses</div>
+  </div>
+</div>
+</br>
+</br>
+<div class="container">
+  <img src="9.jpg" alt="Avatar" class="image">
+  <div class="overlayexpand">
+  <div class="text">Heroes & Generals</br> Online Multiplayer  </br>Shooting </br>WW2 Story Mode </br>  %70 Positive Responses</div>
+  </div>
+</div>
+<div class="containertwo">
+  <img src="10.jpg" alt="Avatar" class="image">
+  <div class="overlayexpand">
+  <div class="text">COD: Advance Warfare</br> Online Multiplayer/Story Mode  </br>Shooting </br>Exteme Conditions </br>  76% Positive Responses</div>
+  </div>
+</div>
+<div class="containerthree">
+  <img src="11.jpg" alt="Avatar" class="image">
+  <div class="overlayexpand">
+  <div class="text">BattleField Bad Company 2</br> Online/Offline  </br>Shooting </br>Extreme Conditions </br>  78% Positive Responses</div>
+  </div>
+</div>
+<div class="containerfour">
+  <img src="12.jpg" alt="Avatar" class="image">
+  <div class="overlayexpand">
+  <div class="text">DSJ</br> Online/Offline  </br>Drifting </br> Story Mode </br>  56% Positive Responses</div>
+  </div>
+</div>
+<div class="containerfive">
+  <img src="13.jpg" alt="Avatar" class="image">
+  <div class="overlayexpand">
+  <div class="text">Flight Simulator X</br> Online Multiplayer/ Story Mode Practice</br>Simulator </br>Trainig </br>  72% Positive Responses</div>
+  </div>
+</div>
+
+
+
+
+</center>
+
+     
+</body>
+</html>
